@@ -67,4 +67,4 @@ long 123L. Дробные float 12f, 0.2e-2. Символьные 'a', спец�
 {case(1): ;break; case(2): ;break; default: break;}; while(boolean){}; do{}while(boolean);
 for(int i; boolean; i++); for(int i: int[]){};
 
-21. ПРоверка типа объекта. false.
+21. Проверка типа объекта. false.
