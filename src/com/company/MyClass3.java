@@ -125,15 +125,39 @@ public class MyClass3 {
 
     //there are two numbers, print digits both numbers contain
     void function8(int a, int b){
-        String str1 = String.valueOf(a);
-        String str2 = String.valueOf(b);
+        boolean b1, b2;
         for (int i = 0; i < 10; i++) {
-            boolean b1 = str1.contains(String.valueOf(i));
-            boolean b2 = str2.contains(String.valueOf(i));
-            if(b1 && b2){
+            b1 = checkForDigit(i, a);
+            b2 = checkForDigit(i, b);
+            if (b1 && b2){
                 System.out.print(i + " ");
             }
         }
     }
+
+    //check if number contains digit
+    private boolean checkForDigit(int digit, int number){
+        int n;
+        while (number > 0){
+            n = number%10;
+            if (n == digit){
+                return true;
+            }
+            number /= 10;
+        }
+        return false;
+    }
+
+//    void function8(int a, int b){
+//        String str1 = String.valueOf(a);
+//        String str2 = String.valueOf(b);
+//        for (int i = 0; i < 10; i++) {
+//            boolean b1 = str1.contains(String.valueOf(i));
+//            boolean b2 = str2.contains(String.valueOf(i));
+//            if(b1 && b2){
+//                System.out.print(i + " ");
+//            }
+//        }
+//    }
 
 }

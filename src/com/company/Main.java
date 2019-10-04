@@ -9,7 +9,7 @@ public class Main {
 //        func2();
         //cycles
 //        func3();
-        
+
 //        try {
 //            System.in.close();
 //        } catch (IOException e) {
